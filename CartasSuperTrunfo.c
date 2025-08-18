@@ -6,7 +6,7 @@ int main() {
     float areaTeritorial, pib;
 
     printf("========== Jogo - Super Trunfo ========== \n========================================= \n");
-
+    printf("Cadastre a primeira carta do jogo\n");
     printf("Informe o código da carta: \n");
     scanf("%s", numeroCarta);
 
@@ -33,7 +33,7 @@ int main() {
 
     printf("=======================================\n");
 
-    printf("Informações das cartas: \n");
+    printf("Carta cadastrada\n");
     printf("Numero da carta: %s\n", numeroCarta);
     printf("Nome do país: %s\n", nomePais);
     printf("Nome do estado: %s\n", nomeEstado);
@@ -42,6 +42,47 @@ int main() {
     printf("Área territorial: %f Km²\n", areaTeritorial);
     printf("PIB: %f \n", pib);
     printf("Pontos turísticus: %d\n", pontosTuristicos);
+
+    printf("=======================================\n");
+
+    printf("Cadastre a segunda carta do jogo\n");
+    printf("Informe o código da carta: \n");
+    scanf("%s", numeroCarta);
+
+    printf("Informe o país: \n");
+    scanf("%s", nomePais);
+
+    printf("Informe o estado: \n");
+    scanf("%s", nomeEstado);
+
+    printf("Informa o nome da cidade: \n");
+    scanf("%s", nomeCidade);
+
+    printf("Informa a população: \n");
+    scanf("%d", &populacao);
+
+    printf("Informe a área territorial por (Km²): \n");
+    scanf("%f", &areaTeritorial);
+
+    printf("Informe o PIB: \n");
+    scanf("%f", &pib);
+
+    printf("Informa a quantidade de pontos turísticos: \n");
+    scanf("%d", &pontosTuristicos);
+
+    printf("=======================================\n");
+
+    printf("Carta cadastrada: \n");
+    printf("Numero da carta: %s\n", numeroCarta);
+    printf("Nome do país: %s\n", nomePais);
+    printf("Nome do estado: %s\n", nomeEstado);
+    printf("Nome da cidade: %s\n", nomeCidade);
+    printf("População: %d\n", populacao);
+    printf("Área territorial: %f Km²\n", areaTeritorial);
+    printf("PIB: %f \n", pib);
+    printf("Pontos turísticus: %d\n", pontosTuristicos);
+
+    printf("Cartas cadastradas com sucesso\n");
 
     return 0;
 }
