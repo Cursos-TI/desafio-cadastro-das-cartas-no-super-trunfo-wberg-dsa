@@ -4,7 +4,7 @@ int main() {
     char nomePais[20], nomeEstado[20], numeroCarta[10], nomeCidade[20];
     int populacao, pontosTuristicos;
     float areaTeritorial, pib, densidadePopulacional, pibPerCapita;
-    float calcDensidadePop, calcPibPerCapia; //Nível Aventureiro - Calcula a Calcular a Densidade Populacional e o PIB per Capita
+    float calcDensidadePop, calcPibPerCapita; //Nível Aventureiro - Calcula a Calcular a Densidade Populacional e o PIB per Capita
 
     printf("========== Jogo - Super Trunfo ========== \n========================================= \n");
     printf("Cadastre a primeira carta do jogo\n");
@@ -35,7 +35,7 @@ int main() {
     //Nível Aventureiro - Calcular a Densidade Populacional
     calcDensidadePop = populacao / areaTeritorial;
     //Nível Aventureiro - Calcular o PIB per Capita
-    calcPibPerCapia = pib / populacao;
+    calcPibPerCapita = pib / populacao;
 
     printf("=======================================\n");
 
@@ -48,9 +48,10 @@ int main() {
     printf("Área territorial: %f Km²\n", areaTeritorial);
     printf("PIB: %f \n", pib);
     printf("Pontos turísticus: %d\n", pontosTuristicos);
+    
     //Nível Aventureiro
     printf("Desidade populacional: %f\n", calcDensidadePop);
-    printf("PIB per Capita: %f\n", calcPibPerCapia);
+    printf("PIB per Capita: %f\n", calcPibPerCapita);
 
     printf("=======================================\n");
 
@@ -79,16 +80,10 @@ int main() {
     printf("Informa a quantidade de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos);
 
-    printf("Informe a Densidade populacional: \n");
-    scanf("%f", &densidadePopulacional);
-
-    printf("Informe o PIB per Capita: \n");
-    scanf("%f", pibPerCapita);
-
     //Nível Aventureiro - Calcular a Densidade Populacional
     calcDensidadePop = populacao / areaTeritorial;
     //Nível Aventureiro - Calcular o PIB per Capita
-    calcPibPerCapia = pib / populacao;
+    calcPibPerCapita = pib / populacao;
 
     printf("=======================================\n");
 
@@ -104,7 +99,7 @@ int main() {
 
     //Nível Aventureiro
     printf("Desidade populacional: %f\n", calcDensidadePop);
-    printf("PIB per Capita: %f\n", calcPibPerCapia);
+    printf("PIB per Capita: %f\n", calcPibPerCapita);
 
     printf("Cartas cadastradas com sucesso\n");
 
